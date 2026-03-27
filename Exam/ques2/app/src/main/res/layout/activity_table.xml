@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar2" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="#3F51B5" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="20dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Page 2: Table View" android:textSize="22sp" android:textStyle="bold" android:layout_marginBottom="20dp"/>
+
+        <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchColumns="1" android:background="#000000" android:padding="1dp">
+            <TableRow android:background="#CCCCCC" android:padding="5dp">
+                <TextView android:text="Field" android:textStyle="bold" android:padding="10dp"/>
+                <TextView android:text="Value" android:textStyle="bold" android:padding="10dp"/>
+            </TableRow>
+            <TableRow android:background="#FFFFFF" android:padding="5dp">
+                <TextView android:text="Name:" android:padding="10dp"/>
+                <TextView android:id="@+id/tvTableName" android:text="..." android:padding="10dp"/>
+            </TableRow>
+            <TableRow android:background="#FFFFFF" android:padding="5dp">
+                <TextView android:text="Reg No:" android:padding="10dp"/>
+                <TextView android:id="@+id/tvTableReg" android:text="..." android:padding="10dp"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

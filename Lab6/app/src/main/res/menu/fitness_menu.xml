@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_home"
+        android:title="Homepage"
+        android:icon="@android:drawable/ic_menu_mylocation"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="About Us"
+        android:icon="@android:drawable/ic_menu_info_details"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_contact"
+        android:title="Contact Us"
+        android:icon="@android:drawable/ic_menu_call"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_workout"
+        android:title="Workout Plans"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_trainers"
+        android:title="Trainers"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_membership"
+        android:title="Membership"
+        app:showAsAction="never" />
+
+</menu>

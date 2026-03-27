@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Confirmed!"
+        android:textSize="26sp"
+        android:textColor="#4CAF50"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/tvTicketInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:background="#EEEEEE"
+        android:text="Ticket Info"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Another"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>

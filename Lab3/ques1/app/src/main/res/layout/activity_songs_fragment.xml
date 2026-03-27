@@ -1,0 +1,36 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:padding="16dp">
+
+        <TableRow android:background="#CCCCCC" android:padding="10dp">
+            <TextView android:text="Song ID" android:textStyle="bold" android:padding="8dp"/>
+            <TextView android:text="Song Title" android:textStyle="bold" android:padding="8dp"/>
+            <TextView android:text="Duration" android:textStyle="bold" android:padding="8dp"/>
+        </TableRow>
+
+        <TableRow android:padding="5dp">
+            <TextView android:text="001" android:padding="8dp"/>
+            <TextView android:text="Shape of You" android:padding="8dp"/>
+            <TextView android:text="3:53" android:padding="8dp"/>
+        </TableRow>
+
+        <TableRow android:padding="5dp">
+            <TextView android:text="002" android:padding="8dp"/>
+            <TextView android:text="Blinding Lights" android:padding="8dp"/>
+            <TextView android:text="3:20" android:padding="8dp"/>
+        </TableRow>
+
+        <TableRow android:padding="5dp">
+            <TextView android:text="003" android:padding="8dp"/>
+            <TextView android:text="Levitating" android:padding="8dp"/>
+            <TextView android:text="3:23" android:padding="8dp"/>
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>

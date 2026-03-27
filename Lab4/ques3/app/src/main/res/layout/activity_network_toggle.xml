@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imgNetwork"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@android:drawable/ic_menu_wifi"
+        android:layout_marginBottom="30dp"/>
+
+    <ToggleButton
+        android:id="@+id/toggleNetwork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Mobile Data"
+        android:textOff="Wi-Fi"
+        android:checked="false"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnChangeMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Mode" />
+
+</LinearLayout>
