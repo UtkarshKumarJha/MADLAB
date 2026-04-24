@@ -23,4 +23,25 @@
         android:background="#EEEEEE"
         android:padding="20dp"/>
 
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update (Mock Example)"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Student"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnViewAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All Students"
+        android:layout_marginTop="10dp"/>
+
 </LinearLayout>

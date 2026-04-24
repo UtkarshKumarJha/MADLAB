@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="20dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Manage Events" android:textSize="24sp" android:textStyle="bold" android:layout_marginBottom="20dp"/>
+
+    <EditText android:id="@+id/etSerialNo" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Serial No (Required)" android:inputType="number"/>
+    <EditText android:id="@+id/etEventName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Event Name" />
+    <EditText android:id="@+id/etDate" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Date" />
+    <EditText android:id="@+id/etTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Time" />
+    <EditText android:id="@+id/etLocation" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Location" android:layout_marginBottom="20dp"/>
+
+    <Button android:id="@+id/btnInsertEvent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Create New Event" />
+    <Button android:id="@+id/btnUpdateEvent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Update Existing Event" />
+    <Button android:id="@+id/btnGoToStudent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Go To Student Registration Screen" android:layout_marginTop="20dp" android:backgroundTint="#4CAF50"/>
+</LinearLayout>

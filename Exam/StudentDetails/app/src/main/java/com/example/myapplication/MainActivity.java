@@ -14,10 +14,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    DBHelper dbHelper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        dbHelper = new DBHelper(this);
 
         EditText etName = findViewById(R.id.etName);
         RadioGroup rgGender = findViewById(R.id.rgGender);
@@ -53,13 +57,22 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
 
-            // Send data to Page 2
-            Intent intent = new Intent(MainActivity.this, DisplayActivity.class);
-            intent.putExtra("NAME", name);
-            intent.putExtra("GENDER", gender);
-            intent.putExtra("COURSE", course);
-            intent.putExtra("HOSTEL", hostelStatus);
-            startActivity(intent);
+            // Database Insert Operation
+            long id = dbHelper.insertStudent(name, gender, course, hostelStatus);
+            if (id != -1) {
+                Toast.makeText(this, "Data Saved to SQLite", Toast.LENGTH_SHORT).show();
+                
+                // Send data to Page 2
+                Intent intent = new Intent(MainActivity.this, DisplayActivity.class);
+                intent.putExtra("ID", id); // Pass the ID for CRUD operations on next page
+                intent.putExtra("NAME", name);
+                intent.putExtra("GENDER", gender);
+                intent.putExtra("COURSE", course);
+                intent.putExtra("HOSTEL", hostelStatus);
+                startActivity(intent);
+            } else {
+                Toast.makeText(this, "Data Insertion Failed", Toast.LENGTH_SHORT).show();
+            }
         });
     }
 }
